@@ -3,32 +3,33 @@ package entities;
 import java.util.Date;
 
 public abstract class Tickets {
-	private Integer id;
+	private int id;
+	static int count=0;
 	private String showName;
-	private Date showSchedule;
+	private String showSchedule;
 	private Integer aproxDuration;
 	private Double showCost;
+	private String showType;
 	
 	//Constructors
-	public Tickets(Integer id, String showName, Date showSchedule, Integer aproxDuration) {
-		super();
-		this.id = id;
+	public Tickets(String showName, String showSchedule, Integer aproxDuration, String showType) {
+		count++;
+		this.id = count;
 		this.showName = showName;
 		this.showSchedule = showSchedule;
 		this.aproxDuration = aproxDuration;
+		this.showType = showType;
 	}
 	
 	public Tickets() {
-
+		count++;
+		this.id = count;
 	}
 	
 	//Getters and Setter
 
-	public Integer getId() {
+	public int getId() {
 		return id;
-	}
-	public void setId(Integer id) {
-		this.id = id;
 	}
 	public String getShowName() {
 		return showName;
@@ -36,10 +37,10 @@ public abstract class Tickets {
 	public void setShowName(String showName) {
 		this.showName = showName;
 	}
-	public Date getShowSchedule() {
+	public String getShowSchedule() {
 		return showSchedule;
 	}
-	public void setShowSchedule(Date showSchedule) {
+	public void setShowSchedule(String showSchedule) {
 		this.showSchedule = showSchedule;
 	}
 	public Integer getAproxDuration() {
@@ -51,4 +52,14 @@ public abstract class Tickets {
 	public Double getShowCost() {
 		return showCost;
 	}
+
+	public String getShowType() {
+		return showType;
+	}
+
+	public void setShowType(String showType) {
+		this.showType = showType;
+	}
+	
+
 }

@@ -1,13 +1,13 @@
 package entities;
 
 public class Gender {
-	private GenderType genderType;
+	private RecitalGenderType genderType;
 
-	public GenderType getGenderType() {
+	public RecitalGenderType getGenderType() {
 		return genderType;
 	}
 
-	public void setGenderType(GenderType genderType) {
+	public void setGenderType(RecitalGenderType genderType) {
 		this.genderType = genderType;
 	}
 }

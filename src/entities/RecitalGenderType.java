@@ -1,6 +1,6 @@
 package entities;
 
-public enum GenderType {
+public enum RecitalGenderType {
 	ROCK,
 	HEAVY_METAL,
 	REGGAETON,
