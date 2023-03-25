@@ -49,9 +49,8 @@ public abstract class Tickets {
 	public void setAproxDuration(Integer aproxDuration) {
 		this.aproxDuration = aproxDuration;
 	}
-	public Double getShowCost() {
-		return showCost;
-	}
+	
+	public abstract Double getShowCost(); 
 
 	public String getShowType() {
 		return showType;
