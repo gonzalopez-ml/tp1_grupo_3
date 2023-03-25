@@ -7,6 +7,10 @@ import entities.TheatreGenderType;
 import entities.TicketRecital;
 import entities.TicketTeatro;
 import entities.Tickets;
+//Santiago
+import entities.TicketInfantil;
+
+
 
 public class Main {
 
@@ -19,6 +23,12 @@ public class Main {
 		gender.setGenderType(RecitalGenderType.ROCK);
 		Tickets tick2 = new TicketRecital("Prueba recital","25-03-2023",100, "RECITAL_GENERAL", band, gender, 2);	
 		System.out.println(tick2.toString());
+		
+		
+		//SANTIAGO CIRONE
+		Tickets tick3 =  new TicketInfantil("Prueba INFANTIL","25-03-2023",100, "INFANTIL",10,"NO");
+		System.out.println(tick3.toString());
+		
 	}
 
 }
