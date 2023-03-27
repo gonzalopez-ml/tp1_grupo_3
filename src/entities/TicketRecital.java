@@ -1,6 +1,6 @@
 package entities;
 
-public class TicketRecital extends Tickets {
+public class TicketRecital extends Tickets implements ITickets{
 	
 	private Band band;
 	private Gender gend;

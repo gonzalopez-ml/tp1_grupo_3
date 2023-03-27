@@ -3,7 +3,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 
-public class TicketInfantil extends Tickets {
+public class TicketInfantil extends Tickets implements ITickets{
     
 	//Encapsulamiento
 	private int minAge;

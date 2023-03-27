@@ -2,7 +2,7 @@ package entities;
 
 import java.util.Date;
 
-public class TicketTeatro extends Tickets {
+public class TicketTeatro extends Tickets implements ITickets {
 	
 	private TheatreGenderType GenderType;
 	private Integer actors;
