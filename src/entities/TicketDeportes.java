@@ -1,7 +1,7 @@
 package entities;
 
 
-public class TicketDeportes extends Tickets implements ITickets {
+public class TicketDeportes extends Tickets{
 	
 	final static double COST_FOOTBALL = 300;
 	final static double COST_RUGBY = 450;
@@ -50,14 +50,16 @@ public class TicketDeportes extends Tickets implements ITickets {
 		this.SportType = SportType;
 	}
     
-    public String toString() {
-		return "\n - Id: " + getId() +
+		
+	@Override
+    public void Information() {
+		 System.out.println("********* DEPORTES *************** \n Id: " + getId() +
 				"\n - Show: " + getShowName() +
 				"\n - Precio: " + this.getShowCost() +
 				"\n - Dia: " + getShowSchedule() +
 				"\n - Duracion: " + getAproxDuration() +
 				"\n - Asunto: " + getShowType() +
 				"\n - Es internacional: " + getInternational() +
-				"\n - Deporte: " + getSportType();
+				"\n - Deporte: " + getSportType());
 	}
 }

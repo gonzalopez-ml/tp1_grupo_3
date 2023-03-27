@@ -3,7 +3,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 
-public class TicketInfantil extends Tickets implements ITickets{
+public class TicketInfantil extends Tickets{
     
 	//Encapsulamiento
 	private int minAge;
@@ -65,15 +65,16 @@ public class TicketInfantil extends Tickets implements ITickets{
         }
     }
 
-    public String toString() {
-		return "\n - Id: " + getId() +
+	@Override
+    public void Information() {
+    	System.out.println("********* INFANTILES *************** \n Id: " + getId() +
 				"\n - Show: " + getShowName() +
 				"\n - Precio: " + this.getShowCost() +
 				"\n - Dia: " + getShowSchedule() +
 				"\n - Duracion: " + getAproxDuration() +
 				"\n - Genero: " + getShowType() +
 				"\n - EDAD: " + getminAge()+
-				"\n - SOUVENIR: " + getSouvenir();
+				"\n - SOUVENIR: " + getSouvenir());
 	}
 
     

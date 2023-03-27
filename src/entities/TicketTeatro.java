@@ -2,7 +2,7 @@ package entities;
 
 import java.util.Date;
 
-public class TicketTeatro extends Tickets implements ITickets {
+public class TicketTeatro extends Tickets{
 	
 	private TheatreGenderType GenderType;
 	private Integer actors;
@@ -50,15 +50,14 @@ public class TicketTeatro extends Tickets implements ITickets {
 		return THEATRE_VALUE;
 	}
 	
-	@Override
-	public String toString() {
-		return "\n - Id: " + getId() +
+	public void Information() {
+		System.out.println("********* ESPECTACULOS *************** \n Id: " + getId() +
 				"\n - Show: " + getShowName() +
 				"\n - Precio: " + getShowCost() +
 				"\n - Dia: " + getShowSchedule() +
 				"\n - Duracion: " + getAproxDuration() +
 				"\n - Genero: " + getGenderType() +
-				"\n - Actores: " + getActors();
+				"\n - Actores: " + getActors());
 	}
 
 }

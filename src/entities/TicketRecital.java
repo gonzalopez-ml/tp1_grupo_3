@@ -1,6 +1,6 @@
 package entities;
 
-public class TicketRecital extends Tickets implements ITickets{
+public class TicketRecital extends Tickets{
 	
 	private Band band;
 	private Gender gend;
@@ -55,14 +55,14 @@ public class TicketRecital extends Tickets implements ITickets{
 	}
 	
 	@Override
-	public String toString() {
-		return "\n - Id: " + getId() +
+	public void Information() {
+		System.out.println("********* RECITALES *************** \n Id: " + getId() +
 				"\n - Show: " + getShowName() +
 				"\n - Precio: " + getShowCost() +
 				"\n - Dia: " + getShowSchedule() +
 				"\n - Duracion: " + getAproxDuration() +
 				"\n - Banda: " + getBand().getName() +
 				"\n - Genero: " + getGend().getGenderType() +
-				"\n - Bandas soporte: " + getQuantitySupportBand();
+				"\n - Bandas soporte: " + getQuantitySupportBand());
 	}
 }

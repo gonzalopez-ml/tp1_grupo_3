@@ -2,7 +2,7 @@ package entities;
 
 import java.util.Date;
 
-public abstract class Tickets {
+public abstract class Tickets implements IShow{
 	private int id;
 	static int count=0;
 	private String showName;
@@ -59,6 +59,8 @@ public abstract class Tickets {
 	public void setShowType(String showType) {
 		this.showType = showType;
 	}
+	
+
 	
 
 }
