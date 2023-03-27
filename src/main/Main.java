@@ -9,6 +9,8 @@ import entities.TicketRecital;
 import entities.TicketTeatro;
 import entities.Tickets;
 import entities.TitleHeader;
+import entities.TicketDeportes;
+
 //Santiago
 import entities.TicketInfantil;
 
@@ -38,7 +40,7 @@ public class Main {
 		tick3.Information();
 		
 		//BALTAZAR GARCIA
-		Tickets tick4 = new entities.TicketDeportes("Prueba DEPORTES", "27-03-2023", 90, "ARGENTINA vs CURAZAO", false, SportType.FOOTBALL);
+		Tickets tick4 = new TicketDeportes("Prueba DEPORTES", "27-03-2023", 90, "ARGENTINA vs CURAZAO", false, SportType.FOOTBALL);
 		tick4.Information();
 	}
 
