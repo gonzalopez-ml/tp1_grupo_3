@@ -3,6 +3,7 @@ package main;
 import entities.Band;
 import entities.Gender;
 import entities.RecitalGenderType;
+import entities.SportType;
 import entities.TheatreGenderType;
 import entities.TicketRecital;
 import entities.TicketTeatro;
@@ -29,6 +30,9 @@ public class Main {
 		Tickets tick3 =  new TicketInfantil("Prueba INFANTIL","25-03-2023",100, "INFANTIL",10,"NO");
 		System.out.println(tick3.toString());
 		
+		//BALTAZAR GARCIA
+		Tickets tick4 = new entities.TicketDeportes("Prueba DEPORTES", "27-03-2023", 90, "ARGENTINA vs CURAZAO", false, SportType.FOOTBALL);
+		System.out.println(tick4.toString());
 	}
 
 }
