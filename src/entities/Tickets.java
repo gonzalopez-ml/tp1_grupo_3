@@ -61,6 +61,10 @@ public abstract class Tickets implements IShow{
 	}
 	
 
-	
+		@Override
+	public String toString() {
+		return "Tickets [id=" + id + ", showName=" + showName + ", showSchedule=" + showSchedule + ", aproxDuration="
+				+ aproxDuration + ", showCost=" + showCost + ", showType=" + showType + "]";
+	}
 
 }
